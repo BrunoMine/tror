@@ -1,5 +1,20 @@
 #API do Tror
 
+=======================================> Trocar PLUS itens <========================================
+
+tror.trocar_plus(<player>, <item_rem>, <item_add>, <msg>) -- Função que troca item com um jogador
+	^ Retorna true para troca bem sucedida e false para caso o jogador nao possuir os itens requeridos
+	
+	<player> é o jogador como objeto
+	
+	<item_rem> é uma tabela de itens que serão removidos do jogador (pode ser nula "{}")
+	
+	<item_add> é uma tabela de itens que serão adicionados ao jogador (pode ser nula "{}")
+	
+====================================================================================================
+
+
+
 ==========================================> Trocar itens <==========================================
 
 tror.trocar(<player>, <item_rem>, <item_add>, <msg>) -- Função que troca item com um jogador
