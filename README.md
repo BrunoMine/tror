@@ -31,7 +31,7 @@ local tror = dofile(minetest.get_modpath("my_modname").."/lib/tror.lua")
 
 ### Métodos
 ```txt
-tror.trocar_plus(player, item_rem, item_add) : Tenta trocar itens com um jogador
+tror.trocar(player, item_rem, item_add) : Tenta trocar itens com um jogador
 	^ Caso o jogador não possua os itens exigidos, retorna `false`
 	^ Caso o inventario do jogador fique lotado, dropa os itens
 	
@@ -41,5 +41,5 @@ tror.verificar(player, item_rem, item_add) : Verifica se é possivel realizar um
 	^ Retorna `2` caso o jogador esteja com inventario lotado
 ``
 Para todos os métodos explicados aqui:
-* `item_rem` é uma tabela ordenada de strings dos itens a serem removidos do jogador (exemplo: {"default:dirt 30", "default:tree"})
+* `item_rem` é uma tabela ordenada de strings dos itens a serem removidos do jogador (exemplo: {"default:dirt 30", {name="default:tree",metadata=""}})
 * `item_add` é uma tabela ordenada de strings dos itens a serem adicionados ao jogador (exemplo: {"default:dirt 30", "default:tree"})
