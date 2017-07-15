@@ -145,8 +145,4 @@ tror.trocar = function(player, item_rem, item_add)
 end
 
 
--- Realizar uma troca com um jogador recoloca antiga funcionalidade
-tror.trocar_plus = tror.trocar
-
-
 return tror
